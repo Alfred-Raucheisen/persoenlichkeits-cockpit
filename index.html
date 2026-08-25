@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Persönlichkeits-Cockpit</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --navy: #1a2744;
+    --navy: #2d5a3d;
     --blue: #2E75B6;
     --gold: #C8A84B;
-    --cream: #FAF8F4;
+    --cream: #faf8f4;
     --light: #EEF3FA;
-    --border: #D4DDF0;
-    --text: #1a2744;
-    --muted: #6b7a99;
+    --border: #e0dcd2;
+    --text: #2c2c28;
+    --muted: #6b6b65;
     --s-color: #2E75B6;
     --t-color: #1E6B3C;
     --a-color: #C0392B;
@@ -28,7 +28,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     background: var(--cream);
     color: var(--text);
     min-height: 100vh;
@@ -59,7 +59,7 @@
     background: rgba(46,117,182,0.15);
   }
   .header h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1.6rem, 4vw, 2.4rem);
     color: #fff;
     letter-spacing: 0.02em;
@@ -115,7 +115,7 @@
     padding: 0.65rem 0.9rem;
     border: 1.5px solid var(--border);
     border-radius: 8px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 0.95rem;
     color: var(--text);
     background: var(--cream);
@@ -149,7 +149,7 @@
   }
   .progress-bar {
     height: 100%;
-    background: linear-gradient(90deg, var(--blue), var(--gold));
+    background: linear-gradient(90deg, #1E6B3C, var(--gold));
     border-radius: 99px;
     transition: width 0.4s ease;
     width: 0%;
@@ -163,7 +163,7 @@
 
   /* QUESTION GROUPS */
   .phase-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1rem;
     color: var(--muted);
     letter-spacing: 0.1em;
@@ -302,16 +302,16 @@
     transition: all 0.15s;
   }
 
-  /* M = Most = blue */
+  /* M = Most = green */
   .radio-wrap.m input:checked ~ .radio-custom {
-    border-color: var(--blue);
-    background: var(--blue);
+    border-color: #1E6B3C;
+    background: #1E6B3C;
   }
   .radio-wrap.m input:checked ~ .radio-custom::after {
     background: #fff;
   }
   .radio-wrap.m:hover .radio-custom {
-    border-color: var(--blue);
+    border-color: #1E6B3C;
   }
 
   /* W = Least = gold */
@@ -336,7 +336,7 @@
     color: #fff;
     border: none;
     padding: 1rem 3rem;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.04em;
@@ -369,7 +369,7 @@
     gap: 1rem;
   }
   .result-header h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.6rem;
   }
   .result-header p { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-top: 0.3rem; }
@@ -379,7 +379,7 @@
     border: 1px solid rgba(255,255,255,0.25);
     padding: 0.6rem 1.4rem;
     border-radius: 6px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 0.85rem;
     cursor: pointer;
     transition: background 0.2s;
@@ -460,7 +460,7 @@
     margin-top: 2rem;
   }
   .interp-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.3rem;
     color: var(--navy);
     margin-bottom: 1.2rem;
@@ -486,7 +486,7 @@
     width: 36px; height: 36px;
     border-radius: 8px;
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.1rem;
     font-weight: 700;
     color: #fff;
@@ -529,7 +529,7 @@
 
   /* DOMINANT TYPE */
   .dominant-banner {
-    background: linear-gradient(135deg, var(--navy) 0%, #2a4080 100%);
+    background: linear-gradient(135deg, var(--navy) 0%, #3d7a52 100%);
     border-radius: 12px;
     padding: 1.5rem 2rem;
     color: #fff;
@@ -540,7 +540,7 @@
     flex-wrap: wrap;
   }
   .dominant-letter {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 1;
@@ -577,7 +577,7 @@
     margin: 0 auto 1.5rem;
   }
   .conf-card h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.8rem;
     color: var(--navy);
     margin-bottom: 0.8rem;
@@ -603,7 +603,7 @@
   .url-row button {
     background: var(--gold); color: var(--navy); border: none;
     padding: 0.6rem 1.2rem; border-radius: 6px;
-    font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 700;
+    font-family: 'Jost', sans-serif; font-size: 0.82rem; font-weight: 700;
     cursor: pointer; white-space: nowrap; transition: opacity 0.2s;
   }
   .url-row button:hover { opacity: 0.85; }
@@ -655,7 +655,7 @@
     border: none;
     padding: 0.8rem 1.4rem;
     border-radius: 8px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 0.88rem;
     font-weight: 600;
     cursor: pointer;
@@ -671,7 +671,7 @@
     margin-top: 1.5rem;
   }
   .word-list-section h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     color: var(--navy);
     margin-bottom: 1rem;
     font-size: 1rem;
@@ -713,7 +713,7 @@
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 6px;
     padding: 0.3rem 0.8rem;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-size: 0.78rem;
     font-weight: 700;
     cursor: pointer;
@@ -774,7 +774,7 @@
 
     <div class="instructions" id="instructionsText">
       <strong>Anleitung:</strong> Wählen Sie in jeder Gruppe von vier Begriffen den Begriff,
-      der <strong style="color:var(--blue)">am meisten (M)</strong> auf Sie zutrifft, und den Begriff,
+      der <strong style="color:#1E6B3C">am meisten (M)</strong> auf Sie zutrifft, und den Begriff,
       der <strong style="color:#9c7a0a">am wenigsten (W)</strong> auf Sie zutrifft.
       Bearbeiten Sie die Felder zügig und hören Sie auf Ihre Intuition. Dauer: ca. 10 Minuten.
     </div>
@@ -863,7 +863,7 @@ const I18N = {
     lName: 'Name', lDate: 'Datum', lGender: 'Geschlecht',
     gPleaseSelect: 'Bitte wählen', gMale: 'Männlich', gFemale: 'Weiblich',
     namePlaceholder: 'Ihr Name',
-    instructions: '<strong>Anleitung:</strong> Wählen Sie in jeder Gruppe von vier Begriffen den Begriff, der <strong style="color:var(--blue)">am meisten (M)</strong> auf Sie zutrifft, und den Begriff, der <strong style="color:#9c7a0a">am wenigsten (W)</strong> auf Sie zutrifft. Bearbeiten Sie die Felder zügig und hören Sie auf Ihre Intuition. Dauer: ca. 10 Minuten.',
+    instructions: '<strong>Anleitung:</strong> Wählen Sie in jeder Gruppe von vier Begriffen den Begriff, der <strong style="color:#1E6B3C">am meisten (M)</strong> auf Sie zutrifft, und den Begriff, der <strong style="color:#9c7a0a">am wenigsten (W)</strong> auf Sie zutrifft. Bearbeiten Sie die Felder zügig und hören Sie auf Ihre Intuition. Dauer: ca. 10 Minuten.',
     groupOf: (i,n) => `Gruppe ${i} von ${n}`,
     notFilled: 'Noch nicht ausgefüllt',
     colMost: 'M', colMostLabel: 'Meisten',
@@ -917,7 +917,7 @@ const I18N = {
     lName: 'Name', lDate: 'Date', lGender: 'Gender',
     gPleaseSelect: 'Please select', gMale: 'Male', gFemale: 'Female',
     namePlaceholder: 'Your name',
-    instructions: '<strong>Instructions:</strong> In each group of four terms, choose the one that fits you <strong style="color:var(--blue)">most (M)</strong> and the one that fits you <strong style="color:#9c7a0a">least (W)</strong>. Work through quickly and trust your intuition. Duration: approx. 10 minutes.',
+    instructions: '<strong>Instructions:</strong> In each group of four terms, choose the one that fits you <strong style="color:#1E6B3C">most (M)</strong> and the one that fits you <strong style="color:#9c7a0a">least (W)</strong>. Work through quickly and trust your intuition. Duration: approx. 10 minutes.',
     groupOf: (i,n) => `Group ${i} of ${n}`,
     notFilled: 'Not yet completed',
     colMost: 'M', colMostLabel: 'Most',
@@ -971,7 +971,7 @@ const I18N = {
     lName: 'Nom', lDate: 'Date', lGender: 'Sexe',
     gPleaseSelect: 'Veuillez choisir', gMale: 'Masculin', gFemale: 'Féminin',
     namePlaceholder: 'Votre nom',
-    instructions: '<strong>Instructions:</strong> Dans chaque groupe de quatre termes, choisissez celui qui vous correspond le <strong style="color:var(--blue)">mieux (M)</strong> et celui qui vous correspond le <strong style="color:#9c7a0a">moins (W)</strong>. Répondez rapidement en écoutant votre intuition. Durée: env. 10 minutes.',
+    instructions: '<strong>Instructions:</strong> Dans chaque groupe de quatre termes, choisissez celui qui vous correspond le <strong style="color:#1E6B3C">mieux (M)</strong> et celui qui vous correspond le <strong style="color:#9c7a0a">moins (W)</strong>. Répondez rapidement en écoutant votre intuition. Durée: env. 10 minutes.',
     groupOf: (i,n) => `Groupe ${i} sur ${n}`,
     notFilled: 'Pas encore rempli',
     colMost: 'M', colMostLabel: 'Le plus',
@@ -1354,7 +1354,7 @@ function renderQuestions() {
       </div>
       <div class="column-labels">
         <div class="col-label">—</div>
-        <div class="col-label" style="color:var(--blue)">${l.colMost}<br><span style="font-weight:400;text-transform:none;letter-spacing:0">${l.colMostLabel}</span></div>
+        <div class="col-label" style="color:#1E6B3C">${l.colMost}<br><span style="font-weight:400;text-transform:none;letter-spacing:0">${l.colMostLabel}</span></div>
         <div class="col-label" style="color:#9c7a0a">${l.colLeast}<br><span style="font-weight:400;text-transform:none;letter-spacing:0">${l.colLeastLabel}</span></div>
       </div>
     `;
@@ -1704,7 +1704,7 @@ function renderInterpretations(profileIS, profilePB) {
       } else {
         pbDesc = `${l.interpPBLabel || 'Projiziertes Bild'} (${pbVal}): ${l.interpPBLower || 'dämpft das Wesen nach aussen'} (${sign}).`;
       }
-      pbNoteHTML = `<div style="font-size:12px;background:#fffbf0;border-left:3px solid #c8a84b;border-radius:0 6px 6px 0;padding:8px 10px;margin-top:10px;line-height:1.6;color:#1a2744">${pbDesc}</div>`;
+      pbNoteHTML = `<div style="font-size:12px;background:#fffbf0;border-left:3px solid #c8a84b;border-radius:0 6px 6px 0;padding:8px 10px;margin-top:10px;line-height:1.6;color:#2c2c28">${pbDesc}</div>`;
     }
 
     const card = document.createElement('div');
